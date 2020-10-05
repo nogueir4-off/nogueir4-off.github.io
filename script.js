@@ -59,9 +59,9 @@ function addNewNote(text = "") {
             small.innerHTML = 'Maximum font size';
                 
             if(small.style.animation == ''){
-                small.style.animation = 'fade 1s';
+                small.style.animation = 'fade 2s';
 
-            } else if(small.style.animation = 'fade 1s'){
+            } else if(small.style.animation = 'fade 2s'){
                 small.innerHTML = 'Maximum font size';
                 small.style.animation = '';
             }
@@ -91,9 +91,9 @@ function addNewNote(text = "") {
             small.innerHTML = 'Minimum font size';
                 
             if(small.style.animation == ''){
-                small.style.animation = 'fade 1s';
+                small.style.animation = 'fade 2s';
 
-            } else if(small.style.animation = 'fade 1s'){
+            } else if(small.style.animation = 'fade 2s'){
                 small.innerHTML = 'Minimum font size';
                 small.style.animation = '';
             }
