@@ -28,6 +28,7 @@ body button:focus {
 }
 
 .add {
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
     background-color: #101026;
     border-radius: 3px;
     border: none;
@@ -79,7 +80,7 @@ body button:focus {
 
 .note .tools .animation-font {
     opacity: 0;
-    margin-right: 7rem;
+    margin-right: 5rem;
     display: flex;
     color: red;
 }
