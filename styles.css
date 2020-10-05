@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #07D962;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+body button:active {
+    transform: scale(0.97);
+    opacity: 95%;
+}
+
+body button:focus {
+    outline: 0;
+}
+
+.bot button:hover {
+    color: #ffcc00;
+    transition: 0.3s ease-in;
+}
+
+.add {
+    background-color: #101026;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.note {
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.note .tools {
+    background-color: #101026;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.note .tools button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.note .tools button:active {
+    transform: scale(0.98);
+}
+
+.note .tools button:focus {
+    outline: 0;
+}
+
+.note .tools .fontLess {
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 10px;
+}
+
+.note .tools .animation-font {
+    opacity: 0;
+    margin-right: 7rem;
+    display: flex;
+    color: red;
+}
+
+@keyframes fade{
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.note .main {
+    background-color: #eee;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+}
+
+.note textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: 19.2px;
+    border: none;
+    width: 100%;
+    height: 400px;
+}
+
+.note .hidden {
+    display: none;
+}
+
