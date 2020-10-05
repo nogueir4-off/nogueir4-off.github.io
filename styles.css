@@ -28,7 +28,7 @@ body button:focus {
 }
 
 .add {
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #101026;
     border-radius: 3px;
     border: none;
@@ -72,9 +72,14 @@ body button:focus {
     outline: 0;
 }
 
+.note .tools .fontMore {
+    display: block;
+    padding-top: 0.23rem;
+}
+
 .note .tools .fontLess {
     display: block;
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
     font-size: 10px;
 }
 
