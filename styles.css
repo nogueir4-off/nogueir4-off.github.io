@@ -72,21 +72,22 @@ body button:focus {
     outline: 0;
 }
 
-.note .tools .fontMore {
-    display: block;
-    padding-top: 0.23rem;
-}
-
 .note .tools .fontLess {
     display: block;
     padding-top: 0.5rem;
     font-size: 10px;
+    position: relative;
+    bottom: 1.2px;
+    left: 2px;
 }
 
-.note .tools .animation-font {
-    opacity: 0;
-    margin-right: 5rem;
+.note .tools small {
+    font-size: 12px;
+    justify-content: flex-start;
+    margin-top: 2px;
+    margin-right: 4rem;
     display: flex;
+    opacity: 0;
     color: red;
 }
 
