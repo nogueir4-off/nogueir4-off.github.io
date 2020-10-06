@@ -47,7 +47,9 @@ function addNewNote(text = "") {
         const estilos = window.getComputedStyle(textArea, null);
         const tamanho = estilos.getPropertyValue('font-size');
         console.log(tamanho)
-
+        
+        modfont('10px', '15px')
+        modfont('15px', '19.2px')
         modfont('19.2px', '25px');
         modfont('25px', '30px');
         modfont('30px', '35px');
