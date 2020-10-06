@@ -80,13 +80,15 @@ function addNewNote(text = "") {
         const tamanho = estilos.getPropertyValue('font-size');
         console.log(tamanho)
 
+        modfont('15px', '10px');
+        modfont('19.2px', '15px');
         modfont('25px', '19.2px');
         modfont('30px', '25px');
         modfont('35px', '30px');
         modfont('40px', '35px');
         modfont('45px', '40px');
         
-        if (tamanho == '19.2px') {
+        if (tamanho == '10px') {
             small.style.animation == ''
             small.innerHTML = 'Minimum font size';
                 
