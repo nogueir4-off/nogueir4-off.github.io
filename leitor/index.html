@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <h1>reader<i class="fas fa-file-audio"></i></h1>
+    <div class="container">
+        <div class="texto">
+            <small class="message"></small>
+            <i class="fas fa-keyboard"></i>
+            <input type="text" id="text" class="class" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="controls">
+            <button class="pause" id="pause"><i class="fas fa-history"></i></i></button>
+
+            <button class="play" id="play"><i class="fas fa-play"></i></button>
+            
+            <button class="deleta" id="delete"><i class="fas fa-trash-alt"></i></button>
+        </div>
+
+        <div class="controlsvoice">
+
+            <button class="more" id="more"><i class="fas fa-angle-up"></i></button>
+            <div class="voz">voice speed: </div> <div class="number" id="number">1</div>
+            <button class="less" id="less"><i class="fas fa-angle-down"></i></button>
+
+        </div>
+    </div>   
+    <script src="script.js"></script> 
+</body>
+</html>
