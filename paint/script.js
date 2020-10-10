@@ -6,12 +6,16 @@ const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
 const finishedEl = document.getElementById('fim');
 const complimentEl = document.getElementById('compliment');
+const eraserEl = document.getElementById('eraser');
+
 const ctx = canvas.getContext("2d");
+
+const blank = document.getElementById('blank');
 
 let size = 20;
 let isPressed = false
 let color = 'black';
-let x = undefined;
+let x = undefined; 
 let y = undefined;
 
 canvas.addEventListener('mousedown', () => {
@@ -41,19 +45,31 @@ canvas.addEventListener('mousemove', (e) => {
 });
 
 finishedEl.addEventListener('click', () => {
-    createStr();
+    if(isCanvasBlank(canvas)) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        canvas.style.backgroundColor = "#e5f5f5";
+        complimentEl.innerHTML = '';
+    } else {
+        createStr();
+    }
 })
 
-function createStr() {
-    if(canvas.toDataURL() == document.getElementById('blank').toDataURL()) {
-        alert('It is blank');
-    } else {
-        let compliments = ['pretty!!', 'beautiful!!', 'wonderful!!', 'perfect!!', 'incredible!!', 'amazing!!'];
-        let word = compliments[Math.floor(Math.random()*compliments.length)];
-        complimentEl.innerHTML = word;
-        complimentEl.classList.add('compliment')
-        canvas.style.backgroundColor = "white";
-    }
+eraserEl.addEventListener('click', () => {
+    ctx.clearTo(fillColor  )
+})
+
+function isCanvasBlank(canvas) {
+    return !canvas.getContext('2d')
+      .getImageData(0, 0, canvas.width, canvas.height).data
+      .some(channel => channel !== 0);
+}
+  
+function createStr() {  
+    let compliments = ['pretty!!', 'beautiful!!', 'wonderful!!', 'perfect!!', 'incredible!!', 'amazing!!'];
+    let word = compliments[Math.floor(Math.random()*compliments.length)];
+    complimentEl.innerHTML = word;
+    complimentEl.classList.add('compliment')
+    canvas.style.backgroundColor = "white";
 }
 
 function drawCircle(x, y) {
