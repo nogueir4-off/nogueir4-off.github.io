@@ -6,16 +6,16 @@
     <title>paint</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <script src="script.js" defer></script>
+    <script src="scripts.js" defer></script>
 </head>
     <body>
-        <canvas id="canvas" width="500" height="500"></canvas>
-        <canvas id='blank' style='display:none'></canvas>
+        <canvas id="canvas" width="550" height="550"></canvas>
         <div class="toolbox">
             <button id="decrease"><i class="fas fa-minus"></i></button>
             <span id="size">20</span>
             <button id="increase"><i class="fas fa-plus"></i></button>
             <input type="color" id="color">
+            <button id="eraser" class='eraser'><i class="fas fa-eraser"></i></button>
             <button id="fim" class="fim">FINISHED</button>
             <h1 id="compliment"></h1>
             <button id="clear" class="del"><i class="fas fa-trash"></i></button>
