@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <canvas id="canvas" width="550" height="550"></canvas>
+        <a id="arquivo" download="nome_do_arquivo.extensão"></a>
+        <div class="toolbox">
+            <button id="decrease"><i class="fas fa-minus"></i></button>
+            <span id="size">20</span>
+            <button id="increase"><i class="fas fa-plus"></i></button>
+            <input type="color" id="color">
+            <button id="pen" class="pen"><i class="fas fa-pen"></i></button>
+            <button id="eraser" class='eraser'><i class="fas fa-eraser"></i></button>
+            <button href="#" id="fim" class="fim">SAVE!</button>
+            <h1 id="compliment"></h1>
+            <button id="clear" class="del"><i class="fas fa-trash"></i></button>
+        </div>
+    </body>
+</html>

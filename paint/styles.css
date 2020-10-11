@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+canvas {
+    border: 4px solid #44ccff;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active { 
+    transform: scale(0.98);
+}
+
+input:focus {
+    outline: 0;
+}
+
+input:active { 
+    transform: scale(0.98);
+}
+
+.fim:hover {
+    -webkit-animation-name:houver;
+    -webkit-animation-duration:0.3s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-delay:0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.toolbox .del i {
+    font-size: 1rem;
+    opacity: 1;
+    color: #7B7B7B;
+} 
+
+.toolbox {
+    background-color: #44ccff;
+    border: 1px solid #44ccff;
+    display: flex;
+    padding: 1rem;
+    width: 558px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.toolbox > * {
+    border-radius: 3px;
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    height: 33px;
+    width: 32px;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+}
+
+.fim {
+    background-color: #ffe603;
+    font-size: 1.3rem;
+    border-radius: 5.5px;
+    margin-left: auto;
+    width: 115px;
+}
+
+#compliment {
+    background-color: transparent;
+    margin-left: auto;
+}
+
+.compliment {
+    font-size: 0rem;
+    background-color: transparent;
+    margin-left: auto;
+    color: #ffc403;
+    animation-name: surg;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    -moz-transition: surg 1s ease-in-out;
+    -webkit-transition: surg 1s ease-in-out;
+    -o-transition: surg 1s ease-in-out;
+    transition: surg 1s ease-in-out;
+}
+
+@keyframes houver {
+    to {background-color: #fdec4e;}
+    from   {background-color: #ffe603;}
+;}
+
+@keyframes surg {
+    0%   {font-size: 0rem; opacity: 0;}
+    10%  {font-size: 0.5rem;}
+    20%  {font-size: 1.1rem; opacity: 1}
+    95%  {font-size: 1rem; opacity: 1;}
+    100% {font-size: 0rem; opacity: 0;}
+;}
