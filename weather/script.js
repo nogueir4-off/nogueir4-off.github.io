@@ -45,8 +45,3 @@ form.addEventListener('submit', (e) => {
         getWeatherByLocation(city)
     }
 })
-
-var getIP = 'http://ip-api.com/json/';
-getJSON(getIP).done(function(location) {
-    console.log(location)
-})
