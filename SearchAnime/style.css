@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: "Muli", sans-serif;
-    background-image: linear-gradient(310deg, #3d363d 10%, #3d363d 40%, #200b1e 100%);
+    background-image: linear-gradient(310deg, #3d363d 10%, #3d363d 40%, #1b0919 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,10 +71,12 @@ button:focus {
     outline: 0;
 }
 
+
 button:hover {
     color: rgb(156, 14, 192);
-    border: 2px solid  rgb(156, 14, 192);
-    transition: 0.5s ease-in-out;
+    border: 2px solid rgb(156, 14, 192);
+    transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+
 }
 
 p {
