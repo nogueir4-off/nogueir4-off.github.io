@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <title>WhatAnime</title>
+</head>
+
+<body>
+    <div class="select">
+        <label class="label" for='fileImg'><i class="fas fa-file-image"></i></i>Upload anime image
+            <input type="file" id="fileImg" class="fileImg" name="filename" required="required"
+                onchange="previewFile()">
+        </label>
+    </div>
+
+    <div class="container">
+        <img src="" id="imgUpload">
+    </div>
+    <button id="btnSearch">Search</button>
+    <div class="resultados">
+            <p id="animeName">Result</p>
+        </div>
+    <div id="container0">
+        <div class="animeNameZero" id="animeNoneZero">
+            <p id="animeNameZero">Anime Name</p>
+        </div> 
+        <div style="display: none;" class="animeName0" id="animeNone0">
+            <p id="animeName0">Anime Name</p>
+        </div> 
+        <div style="display: none;" class="animeName1" id="animeNone1" >
+            <p id="animeName1">Anime Name</p>
+        </div> 
+        <div style="display: none;" class="animeName2" id="animeNone2">
+            <p id="animeName2">Anime Name</p>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
