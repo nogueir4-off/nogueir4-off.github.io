@@ -1,0 +1,141 @@
+@font-face {
+    font-family: MasquetteRegular;
+    src: url(fonts/ARSMaquettePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: MasquetteBold;
+    src: url(fonts/ARSMaquettePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MasquetteMedium;
+    src: url(fonts/ARSMaquettePro-Medium.ttf);
+}
+
+body {
+    font-family: MasquetteMedium;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.text {
+    font-family: MasquetteMedium;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.block1 h1 {
+    max-width: 390px;
+}
+
+.block1 {
+    position: relative;
+    top: 69px;
+    right: 33px;
+}
+
+#block2 {
+    position: relative;
+    top: 0px;
+    left: 33px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block1 hr {
+    height: 3.5px;
+    background-color: #dc2f02;
+    position: relative;
+
+    width: 420px;
+    border: none;
+    float: left;
+}
+
+.block1 .p1 {
+    max-width: 420px;
+    padding-bottom: 10px;
+}
+
+.block1 .p2 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    max-width: 420px;
+}
+
+.block1 .p3 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    max-width: 420px;
+}
+
+.block1 .p4 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    max-width: 420px;
+}
+
+.block1 .p5 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    max-width: 420px;
+}
+
+.block1 .p6 {
+    padding-top: 26px;
+    padding-bottom: 13px;
+    max-width: 420px;
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        display: block;
+    }
+
+    p {
+        width: auto;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .block1 hr {
+        width: 415px;
+        margin:0 auto;
+    }
+
+    .block1 {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    #block2 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .block1 hr {
+        width: 100%;
+        margin:0 auto;
+    }
+}

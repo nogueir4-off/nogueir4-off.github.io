@@ -1,0 +1,104 @@
+@font-face {
+    font-family: MasquetteRegular;
+    src: url(fonts/ARSMaquettePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: MasquetteBold;
+    src: url(fonts/ARSMaquettePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MasquetteMedium;
+    src: url(fonts/ARSMaquettePro-Medium.ttf);
+}
+
+body {
+    font-family: MasquetteMedium;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.text {
+    position: relative;
+    top: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+}
+
+.text h1 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.text img {
+    position: relative;
+    right: 22px;
+    top: 18px;
+    max-width: 512px;
+    width: 31%;
+}
+
+.text .imgTwo {
+    display: none;
+}
+
+.text .aboutProject {
+    position: relative;
+    left: 44px;
+    max-width: 380px;
+}
+
+.text .aboutProject h1 {
+    font-family: MasquetteBold;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        font-family: MasquetteMedium;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: 0;
+    }
+
+    .text .aboutProject {
+        left: 0;
+    }
+
+    .text {
+        position: relative;
+        top: 55px;
+        margin-left: 5%;
+        margin-right:5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 55vh; */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text p {
+        width: 340px;
+    }
+
+    .text img {
+        position: relative;
+        right: 0;
+        max-width: 512px;
+    }
+    
+    .text .imgOne {
+        display: none; 
+    }
+
+    .text .imgTwo {
+        max-width: 212px;
+        display: flex;
+        width: 70%;
+    }

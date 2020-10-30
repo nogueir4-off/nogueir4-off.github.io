@@ -1,0 +1,209 @@
+@font-face {
+    font-family: MasquetteRegular;
+    src: url(fonts/ARSMaquettePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: MasquetteBold;
+    src: url(fonts/ARSMaquettePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MasquetteMedium;
+    src: url(fonts/ARSMaquettePro-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MasquetteRegular;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: 0;
+}
+
+.text {
+    position: relative;
+    top: 35px;
+    flex-direction: column;
+    left: 47px;
+}
+
+.text h1{
+    font-family: MasquetteBold;
+    font-size: 45px;
+    line-height: 45px;
+    width: 450px;
+}
+
+.text p {
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    width: 350px;
+}
+
+.text img {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 512px;
+    width: 60%;
+    float: right;
+    animation: bounce 25s ease-in-out infinite;
+}
+
+.text .btnOne {
+    position: relative;
+    text-align: center;
+    bottom: 25px;
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+
+    text-decoration: none;
+    border: none;
+    background-color: #e85d04;
+    border-radius: 4px;
+
+    transition: all 0.3s;
+}
+
+.text .btnTwo {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    bottom: 25px;
+    height: 50px;
+    width: 160px;
+    text-decoration: none;
+    border: 1px solid #8b8b8b;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color 0.4s ease-in, border 0s linear;
+}
+
+.text .btnOne a {
+    text-decoration: none;
+    position: relative;
+    font-family: MasquetteMedium;
+    color: white;
+    z-index: 2;
+}
+
+
+.text .btnTwo a {
+    color: #1A1A1A;
+    font-family: MasquetteMedium;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.text .btnOne:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #dc2f02;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.text .btnTwo:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #8b8b8b;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.text .btnOne:hover:after {
+    width: 100%;
+}
+
+.text .btnTwo:hover {
+    background-color: #e6e6e6;
+}
+
+.text .btnTwo:focus, .text .btnOne:focus {
+    outline: none;
+}
+
+@keyframes bounce {
+    0% {transform: rotate(4deg) translate(-65px, 25px) scale(1.1);}
+    50% {transform: rotate(-4deg) translate(-65px, 25px) scale(1.05);}
+    100% {transform: rotate(4deg) translate(-65px, 25px) scale(1.1);}
+}
+
+@keyframes bounce0 {
+    0% {transform: rotate(4deg) translate(-5px) scale(1.1);}
+    50% {transform: rotate(-4deg) translate(-5px) scale(1.05);}
+    100% {transform: rotate(4deg) translate(-5px) scale(1.1);}
+}
+
+@media screen and (max-width: 1180px) {
+    .text .imgOne {
+        display: flex;
+    }
+
+    
+
+    .text img {
+        padding: 0;
+        margin-top: 50px;
+        animation: none;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .text {
+        margin-top: 0px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+
+    .text .btnTwo {
+        margin-left: 0;
+    }
+
+    .text h1 {
+        margin-bottom: 10px;
+        width: unset;
+    }
+
+    .text p {
+        margin-bottom: 55px;
+        width: unset;
+    }
+
+    .text img {
+        padding: 0;
+        margin: 0;
+        right: 0;
+        width: 55%;
+            
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text .imgOne {
+        display: flex;
+    }
+}

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: MasquetteRegular;
+    src: url(fonts/ARSMaquettePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: MasquetteBold;
+    src: url(fonts/ARSMaquettePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MasquetteMedium;
+    src: url(fonts/ARSMaquettePro-Medium.ttf);
+}
+
+body {
+    font-family: MasquetteMedium;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.text img {
+    float: right;
+    max-width: 555px;
+    position: relative;
+    top: 10px;
+    width: 50%;
+    margin: 60px ;
+}
+
+.text {
+    position: relative;
+    top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+
+    flex-direction: row;
+}
+
+.text .textLeft {
+    margin: 60px ;
+    max-width: 350px;
+}
+
+.text .imgWeather2 {
+    display: none;
+}
+
+.text h1 {
+    font-family: MasquetteBold;
+    width: 350px;
+    font-size: 45px;
+    line-height: 45px;
+}
+.text p {
+    height: 42%;
+    width: 350px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+form {
+    display:flex;
+    flex-direction:row;
+    padding:2px;
+}
+
+input {
+    flex-grow:2;
+    background-color: #DC2F02;
+    font-family: MasquetteMedium;
+    color: #ffeee4;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    border:none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background:#DC2F02;
+    padding-left: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:white;
+    position: relative;
+    right: 1px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+button i {
+    position: relative;
+    font-size: 1.3rem;
+    right: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #f03000;
+}
+
+main {
+    position: relative;
+
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transition: all 2s ease;
+}
+
+main h2 {
+    position: relative;
+    font-family: MasquetteMedium;
+    top: 6px;
+    color: #8b8b8b;
+}
+
+main i {
+    position: relative;
+    color: #8b8b8b;
+    bottom: 2px;
+    right: 0.8;
+    font-size: 2rem;
+    animation: bounce0 2.5s ease infinite;
+}
+
+@keyframes bounce0 {
+    0% {transform: rotate(0deg) scale(1)}
+    100% {transform: rotate(360deg) scale(1)}
+
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        font-family: MasquetteMedium;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: 0;
+        
+    }
+
+    .text {
+        position: relative;
+        top: 90px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text img {
+        float: none;
+        margin-top: 7rem;
+        position: relative;
+        width: 30%;
+        left: 5px;
+        margin-bottom: 0rem;
+    }
+
+    .text h1 {
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .text p {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+    .text img {
+        width: 50%;
+        top: 2rem;
+        position: relative;
+    }
+}
+/* 
+    display: flex;
+    align-items: center;
+    justify-content: center; */
