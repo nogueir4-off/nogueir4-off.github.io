@@ -35,7 +35,7 @@ function checkInputs() {
 	}
 	
 	if(textValue === '') {
-		setErrorFor(textEmail, 'O conteudo não pode ficar em branco');
+		setErrorFor(textEmail, 'A mensagem não pode ficar em branco');
 	} else {
 		setSuccessFor(textEmail);
 	}
