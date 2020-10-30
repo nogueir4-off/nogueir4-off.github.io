@@ -1,0 +1,202 @@
+@font-face {
+    font-family: MasquetteRegular;
+    src: url(fonts/ARSMaquettePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: MasquetteBold;
+    src: url(fonts/ARSMaquettePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MasquetteMedium;
+    src: url(fonts/ARSMaquettePro-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: MasquetteRegular;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+}
+
+nav ul {
+    position: relative;
+    top: 14px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin:0 10px;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger {
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    top: 3.7px;
+    color: black;
+    display: none;
+    font-size: 20px;
+}
+
+.burger:focus {
+    outline: none;
+}
+
+.about {
+    margin-left: 20px;
+    text-align: center;
+    
+    padding: 10px 37px;
+    text-decoration: none;
+    border: 1px solid #8b8b8b;
+    background-color: transparent;
+    border-radius: 3px;
+
+    cursor: pointer;
+    transition: background-color 0.4s ease-in, border 0s linear;
+}
+
+.about:hover {
+    border: 1px solid #8b8b8b;
+    background-color: #e5e5e5;
+}
+
+.about a {
+    color: #1A1A1A;
+    font-family: MasquetteMedium;
+    text-decoration: none;
+}
+
+nav ul button a {
+    text-decoration: none;
+    font-family: MasquetteMedium;
+    color: white;
+}
+
+nav ul button {
+    position: relative;
+    margin-left: 5px;
+    text-align: center;
+    bottom: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: 1px solid #e85d04;
+    background-color: #e85d04;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in, border 0.4s ease-in;
+    border-radius: 3px;
+}
+
+nav ul button:active {
+    transform: scale(0.98);
+}
+
+nav ul button:focus {
+    outline: none;
+}
+
+nav ul button:hover {
+    border: 1px solid #dc2f02;
+    background-color: #dc2f02;
+}
+
+nav ul li a {
+    color: #1A1A1A;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    background-color: #e85d04;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: transform 0.2s ease;
+}
+
+
+nav ul li a:hover::after {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+@media (max-width: 1025px) {
+    body {
+        padding-left: 0;
+    }
+
+    .burger:hover {
+        background-color: transparent;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .about {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        padding: 10px 37px;
+    }
+
+    nav ul {
+        background-color: #fff;
+        box-shadow:0 20px 20px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        position: fixed;
+        top: 95px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.4s ease;
+    }
+    
+    nav ul button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    nav ul.show {
+        z-index: 10;
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 15px;
+    }
+}

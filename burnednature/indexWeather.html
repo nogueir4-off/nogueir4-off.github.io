@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="stylesWeather.css">
+    <link rel="icon" href="images\icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>burned nature</title>
+</head>
+
+<body>
+    <!-- navgat bar -->
+    <nav>
+        <h1><a href="/indexStartPage.html"><i class="fas fa-leaf"></i> burned nature.</a></h1>
+        <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="/indexAboutBurn.html">Sobre as queimadas</a></li>
+            <li><a href="/indexWeather.html">Temperatura agora</a></li>
+            <button class="about" onclick="window.location.href='/indexAboutUs.html';"><a href="/indexAboutUs.html">Sobre</a></button>
+            <button class="contactus" onclick="window.location.href='/indexContactUs.html';" ><a href="/indexContactUs.html">Contate-nos</a></button>
+        </ul>
+    </nav>
+
+    <div class="text">
+        <img class="imgWeather1" src="undraw_weather_notification_4sbo.svg" alt="Weather now">
+        <img class="imgWeather2" src="undraw_Weather_re_qsmd.svg" alt="Weather now">
+        <div class="textLeft">
+            <h1>Clima agora</h1>
+            <p>Dentre as inúmeras as consequências, até irreversíveis, para o meio ambiente, uma delas é sua alteração na temperatura, mesmo que minima, e por conta deste fator criamos um sistema para ver a temperatura em qualquer cidade no mundo.</p>
+            <form id="form">
+                <input id="search" autocomplete="off" spellcheck="false"/>
+                <button id="btnSearch" ><i class="fas fa-search"></i></button>
+            </form>
+            <main id="main"><h2><i class="fas fa-bolt"></i></h2></main>
+        </div>
+
+        
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="scriptWeather.js"></script>
+</body>
+
+</html>

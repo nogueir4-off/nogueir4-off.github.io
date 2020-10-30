@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="stylesContactUs.css">
+    <link rel="icon" href="images\icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>burned nature</title>
+</head>
+
+<body>
+    <!-- navgat bar -->
+    <nav>
+        <h1><a href="/indexStartPage.html"><i class="fas fa-leaf"></i> burned nature.</a></h1>
+        <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="/indexAboutBurn.html">Sobre as queimadas</a></li>
+            <li><a href="/indexWeather.html">Temperatura agora</a></li>
+            <button class="about" onclick="window.location.href='/indexAboutUs.html';"><a href="/indexAboutUs.html">Sobre</a></button>
+            <button class="contactus" onclick="window.location.href='/indexContactUs.html';" ><a href="/indexContactUs.html">Contate-nos</a></button>
+        </ul>
+    </nav>
+
+    <!-- contact -->
+    <div class="contact">
+        <div class="text">
+            <img class="image1" src="images/image.png" alt="Contate-Nos">
+            <h1 id="box">Contate-Nos</h1>
+            <p id="box">Nos contate para falar sobre possiveis alterações ao site relatar algum acontecimento de bug ao utilizar o site ou propor alguma melhora.</p>
+            <img class="image2" src="images/image.png" alt="Contate-Nos">
+        </div>
+        <div class="container">
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label for="username">Insira seu email</label>
+                    <input type="text" placeholder="email@email.com" id="email" autocomplete="off" spellcheck="false"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="username">Insira seu nome</label>
+                    <input type="text" placeholder="nome" id="username" autocomplete="off" spellcheck="false"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+        
+                <div class="form-control">
+                    <label for="username">Conteudo do email</label>
+                    <!-- <input type="text" class="emailContent" id="password" /> -->
+                    <textarea name="email" id="textEmail" cols="30" rows="10" spellcheck="false"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script1.js"></script>
+    <script src="scriptContactUs.js"></script>
+</body>
+
+</html>
