@@ -3,6 +3,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const textEmail = document.getElementById('textEmail');
 const textarea = document.querySelector('textarea');
+const actionFormAnimation = document.getElementById('actionFormAnimation')
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -10,7 +11,10 @@ form.addEventListener('submit', e => {
     checkInputs();
     const emailValue = email.value.trim();
     if(isEmail(emailValue) && username.value.trim() != "" && textEmail.value.trim() != "") {
-        sendEmail();
+		actionFormAnimation.classList.remove("btnWithAnimation");
+		void actionFormAnimation.offsetWidth;
+		actionFormAnimation.classList.add("btnWithAnimation");
+		sendEmail();
     }
 });
 
@@ -35,7 +39,7 @@ function checkInputs() {
 	}
 	
 	if(textValue === '') {
-		setErrorFor(textEmail, 'A mensagem não pode ficar em branco');
+		setErrorFor(textEmail, 'O conteudo não pode ficar em branco');
 	} else {
 		setSuccessFor(textEmail);
 	}
@@ -57,7 +61,7 @@ function sendEmail() {
 		Subject : "Contact us",
 		Body : `Nome - ${name.value}<br> Email - ${email.value}<br><br>${content.value}`,
 		}).then(
-			message => alert("mail sent successfully")
+			message => console.log('mail sent successfully')
 		);
     }
 }
@@ -77,15 +81,3 @@ function setSuccessFor(input) {
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-
-
-
-
-
-
-
-
-
-
-
