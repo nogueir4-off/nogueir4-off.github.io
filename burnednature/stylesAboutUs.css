@@ -17,6 +17,12 @@ body {
     font-family: MasquetteMedium;
     padding-right: 10%;
     padding-left: 10%;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .text {
@@ -72,7 +78,7 @@ body {
 
     .text {
         position: relative;
-        top: 55px;
+        top: 0px;
         margin-left: 5%;
         margin-right:5%;
         display: flex;
@@ -102,3 +108,15 @@ body {
         display: flex;
         width: 70%;
     }
+
+    .card {
+        -webkit-clip-path: circle(6% at 94% 80%);
+                clip-path: circle(6% at 94% 80%);
+    }
+
+    .card__infoicon i {
+        position: relative;
+        top: 192px;
+        left: 12px;
+    }
+}
