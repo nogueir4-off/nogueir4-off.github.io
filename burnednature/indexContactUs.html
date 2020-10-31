@@ -14,15 +14,16 @@
 <body>
     <!-- navgat bar -->
     <nav>
-        <h1><a href="/burnednature/indexStartPage.html"><i class="fas fa-leaf"></i> burned nature.</a></h1>
+        <h1><a href="/indexStartPage.html"><i class="fas fa-leaf"></i> burned nature.</a></h1>
         <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
         <ul>
-            <li><a href="/burnednature/indexAboutBurn.html">Sobre as queimadas</a></li>
-            <li><a href="/burnednature/indexWeather.html">Temperatura agora</a></li>
-            <button class="about" onclick="window.location.href='/burnednature/indexAboutUs.html';"><a href="/burnednature/indexAboutUs.html">Sobre</a></button>
-            <button class="contactus" onclick="window.location.href='/burnednature/indexContactUs.html';" ><a href="/burnednature/indexContactUs.html">Contate-nos</a></button>
+            <li><a href="/indexAboutBurn.html">Sobre as queimadas</a></li>
+            <li><a href="/indexWeather.html">Temperatura agora</a></li>
+            <button class="about" onclick="window.location.href='/indexAboutUs.html';"><a href="/indexAboutUs.html">Sobre</a></button>
+            <button class="contactus" onclick="window.location.href='/indexContactUs.html';" ><a href="/indexContactUs.html">Contate-nos</a></button>
         </ul>
     </nav>
+
     <!-- contact -->
     <div class="contact">
         <div class="text">
@@ -50,7 +51,7 @@
                 </div>
         
                 <div class="form-control">
-                    <label for="username">Mensagem</label>
+                    <label for="username">Conteudo do email</label>
                     <!-- <input type="text" class="emailContent" id="password" /> -->
                     <textarea name="email" id="textEmail" cols="30" rows="10" spellcheck="false"></textarea>
                     <i class="fas fa-check-circle"></i>
@@ -58,7 +59,7 @@
                     <small>Error message</small>
                 </div>
 
-                <button>Enviar</button>
+                <button id="actionFormAnimation" class="btnWithAnimation">Enviar</button>
             </form>
         </div>
     </div>
