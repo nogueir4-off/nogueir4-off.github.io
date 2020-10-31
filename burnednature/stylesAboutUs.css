@@ -78,7 +78,6 @@ body {
 
     .text {
         position: relative;
-        top: 0px;
         margin-left: 5%;
         margin-right:5%;
         display: flex;
