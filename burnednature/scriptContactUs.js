@@ -3,7 +3,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const textEmail = document.getElementById('textEmail');
 const textarea = document.querySelector('textarea');
-const actionFormAnimation = document.getElementById('actionFormAnimation')
+const button = document.querySelector('.form button');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -11,9 +11,10 @@ form.addEventListener('submit', e => {
     checkInputs();
     const emailValue = email.value.trim();
     if(isEmail(emailValue) && username.value.trim() != "" && textEmail.value.trim() != "") {
-		actionFormAnimation.classList.remove("btnWithAnimation");
-		void actionFormAnimation.offsetWidth;
-		actionFormAnimation.classList.add("btnWithAnimation");
+		button.style.transition = "all 0.8s ease";
+		button.style.backgroundColor = "#00b88a";
+		button.style.border = "2px solid #00b88a";
+		button.innerHTML = "Enviado <i class='fas fa-check-circle'></i>"
 		sendEmail();
     }
 });
