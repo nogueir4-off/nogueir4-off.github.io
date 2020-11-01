@@ -127,7 +127,7 @@ body {
     visibility: visible;
 }
 
-.form .btnWithAnimation {
+.form button {
     background-color: #dc2f02;
     border: 2px solid #dc2f02;
     border-radius: 4px;
@@ -137,7 +137,6 @@ body {
     font-size: 16px;
     padding: 10px;
     width: 100%;
-    animation: actionForm 2s ease-in-out;
 }
 
 
@@ -148,15 +147,6 @@ body {
 .form button:focus {
     outline: none;
 }
-
-@keyframes actionForm {
-    0% {background-color: #dc2f02; border: 2px solid #dc2f02;}
-    50% {background-color: #00b88a; border: 2px solid #00b88a;}
-    100% {background-color: #dc2f02; border: 2px solid #dc2f02;}
-}
-
-
-
 
 .contact {
     position: relative;
