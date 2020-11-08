@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Piazzolla&display=flex');
+
+body {
+    background-color: lightskyblue;
+    display: flex;
+    font-family: "Piazzolla", sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 130px;
+}
+
+.generate {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    position: relative;
+    top: 18px;
+    right: 15px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon-btn i {
+    transition: all 0.6s ease;
+}
+
+.icon-btn {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+}
+.icon-btn i {
+    color: #85ca96;
+    margin: 2.2px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.text {
+    position: relative;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 30px;
+    max-width: 250px;
+}
+
+#btnCopy i {
+    color: rgb(223, 253, 115);
+} 
+
+#btnCopy i:active {
+    transition: transform 0s ease;
+    transform: scale(0.98);
+} 
+
+.icon-btn i.spin-animation {
+    animation-name: spin;
+    -webkit-animation-name: spin;
+    -moz-animation-name: spin;
+    -ms-animation-name: spin;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-timing-function: ease-in;
+}
