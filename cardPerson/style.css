@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: lightblue;
+    font-family: "Poppins", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    transition: transform 0.6s ease, box-shadow 0.8s ease;
+    padding: 20px;
+    margin: -15px;
+    height: 230px;
+    
+    min-width: 140px;
+    max-width: 140px;
+}
+
+.card:hover, .card:focus {
+    box-shadow: rgba(0, 0, 0, 0.2) 50px 10px 35px 5px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transform: 
+    rotateX(-20deg)
+    rotateZ(20deg)
+    translateY(-25px) 
+    translateX(-30px);    
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid lightsalmon;
+}
+
+.card h1 {
+    font-size: 20px;
+}
+
+.buttonGen button {
+    border: none;
+    font-weight: 900;
+    background: lightsalmon;
+    outline: 0ch;
+    box-shadow: 0 1px rgb(255, 164, 128),
+                0 8px rgb(255, 140, 95), 
+                0 9px 6px -3px rgb(255, 174, 142); 
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.buttonGen button:active {
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transform: translateY(5px);
+    box-shadow: 0 1px rgb(255, 164, 128),
+                0 0px rgb(255, 140, 95), 
+                0 9px 6px -3px rgb(255, 174, 142); 
+}
