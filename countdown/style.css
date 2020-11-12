@@ -44,7 +44,6 @@ hr {
 
 .dates .second {
 	margin-right: 0px;
-	margin-top: 8px;
 }
 
 .dates h1 {
@@ -59,7 +58,32 @@ hr {
 	margin-right: 60px;
 }
 
+@media screen and (max-width: 512px) {
+	.dates .points {
+		right: 5px;
+	}
 
+	.dates div {
+		margin-right: 20px;
+	}
 
+	p {
+		font-size: 15px;
+	}
+}
 
+@media screen and (max-width: 345px) {
+	.dates div {
+		margin-right: 5px;
+	}
 
+	.dates .points {
+		left: 1px;
+		position: relative;
+		bottom: 60px;
+	}
+
+	p {
+		font-size: 11px;
+	}
+} 
