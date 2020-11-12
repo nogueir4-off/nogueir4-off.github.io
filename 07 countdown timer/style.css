@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #17b978;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	min-height: 90vh;
+}
+
+input {
+	border: none;
+	width: 200px;
+	height: 40px;
+	font-family: "Poppins", sans-serif;
+	font-size: 13px;
+	text-align: center;
+	font-weight: 900;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	outline: 0;
+	padding: 8px;
+	margin: 50px;
+	border-radius: 20px;
+}
+
+hr {
+	border: 1px solid black;
+}
+
+.dates .points {
+	margin: 5px;
+	position: relative;
+	right: 30px;
+	bottom: 75px;
+}
+
+.dates .second {
+	margin-right: 0px;
+	margin-top: 8px;
+}
+
+.dates h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.dates div{
+	display: inline-block;
+	margin-right: 60px;
+}
+
+
+
+
+
