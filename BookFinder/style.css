@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: rgb(225,225,225);
+	background: -moz-linear-gradient(180deg, rgba(225,225,225,1) 0%, rgba(207,207,207,1) 0%, rgba(225,225,225,1) 38%, rgba(194,194,194,1) 100%)fixed;
+	background: -webkit-linear-gradient(180deg, rgba(225,225,225,1) 0%, rgba(207,207,207,1) 0%, rgba(225,225,225,1) 38%, rgba(194,194,194,1) 100%)fixed;
+	background: linear-gradient(180deg, rgba(225,225,225,1) 0%, rgba(207,207,207,1) 0%, rgba(225,225,225,1) 38%, rgba(194,194,194,1) 100%)fixed;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e1e1",endColorstr="#c2c2c2",GradientType=1);
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	min-height: 90vh;
+}
+
+.text {
+	margin-left: 100px
+}
+
+.text button {
+	background-color: black;
+	padding: 10px;
+	height: 45px;
+	width: 294px;
+	font-size: 15px;
+	outline: 0;
+	font-weight: bold;
+	color: #008CCC;
+	border-radius: 10px;
+	box-shadow: 0px 7px 0px 0px black;
+	border: 2px solid #008CCC;
+}
+
+.text button:active {
+	transform: translateY(5px);
+	box-shadow: 0px 0px 0px 0px black;
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 65px;
+	max-width: 300px;
+}
+
+span {
+	color: #008CCC;
+	text-shadow: 0.1px 0.1px black, 0.2px 0.2px black, 0.3px 0.3px black, 0.4px 0.4px black, 0.5px 0.5px black,
+				 0.6px 0.6px black, 0.7px 0.7px black, 0.8px 0.8px black, 0.9px 0.9px black, 1px 1px black,
+				 1.1px 1.1px black, 1.2px 1.2px black, 1.3px 1.3px black, 1.4px 1.4px black, 1.5px 1.5px black,
+				 1.6px 1.6px black, 1.7px 1.7px black, 1.8px 1.8px black, 1.9px 1.9px black, 2px 2px black, 
+				 2.1px 2.1px black, 2.2px 2.2px black, 2.3px 2.3px black, 2.4px 2.4px black, 2.5px 2.5px black, 
+				 2.6px 2.6px black, 2.7px 2.7px black, 2.8px 2.8px black, 2.9px 2.9px black, 3px 3px black; 
+}
+
+/*.my {
+	position: absolute;
+	/*left: 15px;
+	bottom: 15px;
+}
+/*
+.my i {
+	font-size: 25px;
+	opacity: 0.2;
+	color: black;
+}*/
+
+.image img {
+	position: relative;
+	top: 31px;
+	max-height: 310px;
+	height: 310px;
+}
+
+@media screen and (max-width: 500px)  {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-right: 10%;
+		padding-left: 10%;
+		margin: 0;
+	}
+
+	.image img {
+		position: relative;
+		top: 31px;
+		max-height: 310px;
+		height: 280px;
+	}
+	h1 {
+		font-size: 55px;
+		line-height: 65px;
+		max-width: 300px;
+	}
+
+	.text {
+		margin: 0px;
+	}
+}
