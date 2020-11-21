@@ -3,15 +3,25 @@ const form = document.querySelector('form');
 const btn = document.querySelector('button');
 const image = document.querySelector('.image');
 const boooks = document.querySelector('.boooks');
-
+const tudo = document.querySelector('.create');
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
+	if(document.querySelector('.bookMain')) {
+		while(document.querySelector('.bookMain')) {
+			document.querySelector('.bookMain').remove();
+		}
+	}
 	if(book.value) {
 		searchBook(book.value)
 	}
 });
 
 btn.addEventListener('click', (e) => {
+	if(document.querySelector('.bookMain')) {
+		while(document.querySelector('.bookMain')) {
+			document.querySelector('.bookMain').remove();
+		}
+	}
 	if(book.value) {
 		searchBook(book.value)
 	}
@@ -74,6 +84,7 @@ function createBook(books) {
 		`
 		image.style.display= "none";
 		document.body.appendChild(bookMain);
+		book.value = "";
 	}
 }
 
