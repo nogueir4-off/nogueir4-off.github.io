@@ -20,7 +20,6 @@ body {
 input[type="text"] {
 	height: 50px;
 	width: 390px;
-
 	padding: 20px;
 
 	font-weight: bold;
@@ -47,8 +46,9 @@ input:active {
 button {
 	height: 50px;
 	width: 390px;
+	margin-top: 20px;
 
-	margin: 20px;;
+	margin-bottom: 20px;
 
 	text-align: center;
 	font-size: 15px;
@@ -88,17 +88,22 @@ button:active {
 	max-width: 370px;
 	min-height: 500px;
 	max-height: 500px;
+	width: 100%;
 	margin: 10px;
 	padding: 20px;
 }
+
 
 .create {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 2000px;
-	min-height: 90vh;
+	flex-wrap: wrap;
+	position: block;
+	top: 2px;
+	width: 400rem;
+	margin-top: 200px;
 }
 
 .bookMain .title h1 {
@@ -113,9 +118,9 @@ button:active {
 }
 
 .bookMain .container .descript p{
-	font-size: 14px;
+	font-size: 10px;
 	position: relative;
-	top: 1px;
+	top: 8px;
 }
 
 .bookMain .container .imageBook img {
@@ -175,10 +180,32 @@ button:active {
 	padding: 5px;
 }
 
-.boooks .bookMain {
-    background-color: #eee;
-} 
 
-.boooks {
-	display: flex;
+@media screen and (max-width: 500px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	input[type="text"] {
+		width: 300px;
+		width: 100%;	
+	}
+
+	button {
+		width: 235px;	
+	}
+
+	.bookMain {
+		background-color: white;
+		border-radius: 20px;
+		min-width: 350px;
+		max-width: 350px;
+		min-height: 500px;
+		max-height: 500px;
+		width: 100%;
+		margin: 10px;
+		padding: 20px;
+	}
 }
