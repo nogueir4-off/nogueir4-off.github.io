@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=flex');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=flex');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #adb5bd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 90vh;
+}
+
+header {
+	font-family: "Indie Flower", sans-serif;
+}
+
+header h1 i {
+	position: relative;
+	right: 7px;
+	top: 3px;
+	transform: rotate(-10deg);
+} 
+
+header h1 {
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 
+	0px 0px 6px #ced4da, -0.0075em 0.0075em 0 #fef2f6,	 
+	0.1px 0.1px #495057, 0.2px 0.2px #495057, 0.3px 0.3px #495057,
+	0.4px 0.5px #495057, 0.6px 0.6px #495057, 0.7px 0.7px #495057,
+	0.8px 0.8px #495057, 0.9px 0.9px #495057,
+	1.1px 1.1px #495057, 1.2px 1.2px #495057, 1.3px 1.3px #495057,
+	1.4px 1.5px #495057, 1.6px 1.6px #495057, 1.7px 1.7px #495057,
+	1.8px 1.8px #495057, 1.9px 1.9px #495057,
+	2.1px 2.1px #495057, 2.2px 2.2px #495057, 2.3px 2.3px #495057,
+	2.4px 2.5px #495057, 2.6px 2.6px #495057, 2.7px 2.7px #495057,
+	2.8px 2.8px #495057, 2.9px 2.9px #495057, 3px 3px #fef2f6, 6px 6px 5px rgba(0,0,0,0.2);
+
+}
+
+main input {
+	padding: 10px;
+	border: none;
+	background-color: #dee2e6;
+	border-radius: 50px;
+	outline: none;
+	box-shadow: 0px 4px 0px 0px #6c757d;
+}
+
+main input:focus {
+	transform: translateY(4px);
+	box-shadow: 0px 0px 0px 0px #6c757d;
+}
+
+.result {
+	margin-top: 30px;
+	padding: 10px;
+	display: none;
+	background-color: #dee2e6;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 0px 5px 5px 0px #6c757d;
+}
+
+.info {
+	display: flex;
+}
+
+.info .block2 h6 {
+	margin: 2px;
+	margin-left: 10px;
+	padding: 0;
+}
+
+.info .block2 {
+	padding: 0;
+}
+
+.info img {
+	height: 110px;
+	width: 110px;
+	border-radius: 30%;
+}
