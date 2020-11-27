@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+	<title>markdown preview</title>
+</head>
+<body>
+	<div class="texts">
+		<h1>text to</h1>
+		<!-- <h1>to</h1> -->
+		<h1>markdown</h1>
+		<h1>design</h1>
+	</div>
+	<div class="texto">
+		<h1>text</h1>
+		<textarea name="text" id="text" class="text" spellcheck="false" cols="30" rows="10"></textarea>
+	</div>
+	<div class="container">
+		<div class="html">
+			<div class="title">
+				<h1>html preview <button onclick="copyPreview()"><i class="fas fa-copy"></i></button></h1>
+			</div>
+			<div class="result" id="result"></div>
+		</div>
+		<div class="code">
+			<div class="title">
+				<h1>html code<button onclick="copyCode()"><i class="fas fa-copy"></i></button></h1>
+			</div>
+			<textarea name="resultCode" id="resultCode" disabled class="resultCode" cols="30" rows="10"></textarea>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script> -->
+</html>
+
