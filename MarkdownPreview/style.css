@@ -75,13 +75,14 @@ body {
 }
 
 textarea {
-  margin-top: 0px;
-  padding: 5px;
-  outline: none;
   resize: none;
   border: 2px solid #f7cc15;
   -webkit-box-shadow: 0 9px 0px #cacaca;
           box-shadow: 0 9px 0px #cacaca;
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 190px;
+  background-color: #f1f1f1;
 }
 
 .texto {
@@ -113,7 +114,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2px;
-  min-width: 264px;
+  min-width: 250px;
   max-width: 400px;
   background: #f7cc15;
   margin: 0px;
@@ -233,11 +234,11 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 10px;
 }
 
 .container .code .title {
@@ -263,7 +264,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2px;
-  min-width: 264px;
+  min-width: 250px;
   max-width: 400px;
   background: #f7cc15;
   margin: 0px;
@@ -312,11 +313,13 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .code {
-    margin-top: 10px;
-  }
   .html {
-    margin-top: -20px;
+    margin-left: 10px;
+  }
+  .code {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
