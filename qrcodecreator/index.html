@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="title">
+		<h1>qr code generator</h1>
+	</div>
+	<div class="create">
+		<input type="text" placeholder="your text">
+		<button><i class="fas fa-qrcode"></i> CREATE</button>
+	</div>
+	<div class="qr-code">
+		<div class="qr">
+			<button id="close"><i class="fas fa-times"></i></button>
+			<img id="MyImg" src="" alt="">
+			<button id="save">SAVE IMAGE</button>
+		</div>
+	</div>
+	<canvas id="canvas"></canvas>
+	<script src="script.js"></script>
+</body>
+</html>
