@@ -1,0 +1,103 @@
+@font-face {
+	font-family: whitney-bold;
+	src: url('../fonts/whitney-bold.otf');
+}
+
+@font-face {
+	font-family: whitney-light;
+	src: url('../fonts/whitney-medium.otf');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: whitney-bold;
+	background-color: #16161a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	min-height: 90vh;
+}
+
+.tablePeopleOnline {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	width: 200px;
+    height: 100vh;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	/* border-right: 3px solid black; */
+
+	background-color: #242629;
+}
+
+h1 {
+	/* #2cb67d */
+	/* #7f5af0 */
+	color: #72757e;
+	background-color: #171a1c;
+	/* border-bottom: 3px solid black; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* padding: 5px 20px 10px 20px; */
+	padding-bottom: 5px;
+	font-family: whitney-light;
+	font-weight: lighter;
+	width: 200px;
+	height: 50px;
+	margin: 0px;
+}
+
+.tablePeopleOnline i {
+	position: relative;
+	top: 4.9px;
+	right: 5px;
+	color: #2cb67d;
+	font-size: 15px;
+}
+
+.peoples {
+	position: relative;
+	left: 5px;
+}
+
+.peoples .people i {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	right: 15px; 
+	top: 19px;
+}
+
+.peoples .people p {
+	margin: 0;
+	font-size: 14px;
+	padding: 0;
+	color: #7f5af0;
+}
+
+.sendMessage {
+	position: fixed;
+	left:200px;
+}
+
+.sendMessage input {
+    background-color: #72757e;
+    outline: none; 
+	border-radius: 10px;
+	width: 100%;
+    width: 300px;
+    letter-spacing: 1.5px;
+    padding: 13px;
+}
