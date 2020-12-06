@@ -1,9 +1,0 @@
-palette
-https://www.happyhues.co/palettes/4
-
-colors 
-
-green - #2cb67d
-purple - #7f5af0
-gray - #72757e
-white - #fffffe
