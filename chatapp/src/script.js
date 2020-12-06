@@ -20,9 +20,9 @@ btnLogin.addEventListener('click', () => {
         user = inputLogin.value
 
         a = document.createElement('a')
-        a.href = '/src/chat.html'
+        a.href = '/chatapp/src/chat.html'
         document.body.appendChild(a)
         a.click()
         document.body.remove(a)
     }
-}) 
+})
