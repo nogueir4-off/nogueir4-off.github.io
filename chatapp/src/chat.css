@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+@font-face {
+	font-family: whitney-bold;
+	src: url('../fonts/whitney-bold.otf');
+}
+
+@font-face {
+	font-family: whitney-light;
+	src: url('../fonts/whitney-medium.otf');
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	font-family: "Roboto";
+	background-color: #16161a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    margin: 0;
+	min-height: 90vh;
+}
+
+.container .nameChat {
+    /* background-color: #72757e; */
+    background-color: #242629;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 3px solid black;
+
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0; 
+}
+
+.container .nameChat h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px;
+    /* color: #72757e; */
+    color: #7f5af0;
+    margin: 0px;
+}
+
+.container .nameChat button {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    outline: none;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.container .nameChat button:active {
+    transform: scale(1.03);
+}
+
+.container .nameChat button i {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #7f5af0;
+}
+
+.tableLeft {
+    background-color: #242629;
+    transition: all 0.3s ease;
+
+    z-index: 2;
+    position: fixed;
+
+    left:-500px;
+	top: 0;
+    
+	width: 260px;
+    height: 100vh;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tableLeft h1{
+	color: #72757e;
+    background-color: #171a1c;
+
+    border-bottom: 2px solid black;
+    
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    
+    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+    
+	width: 260px;
+	height: 50px;
+	margin: 0px;
+}
+
+.tableLeft i {
+	position: relative;
+	top: 3.4px;
+	right: 5px;
+	color: #2cb67d;
+	font-size: 15px;
+}
+
+.tableLeft button {
+    width: 29px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: -14px;
+    margin-left: 25px;
+}
+
+.tableLeft button:active {
+    transform: scale(1.03);
+}
+
+.tableLeft .credits {
+    position: absolute;
+    font-family: whitney-light;
+    
+    border-top: 2px solid black;
+    /* border-right: 2px solid #242629; */
+    font-weight: bold;
+    font-size: 20px;
+    left: 0;
+    bottom: 0px;
+}
+
+
+.tableLeft .credits i {
+    color: #72757e;    
+    position: relative;
+    top: 1.4px;
+    font-size: 18px;
+}
+
+
+.tableLeft .fas.fa-bars {
+    position: relative;
+	top: 1px;
+    color: #7f5af0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.peoples {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    float: right;
+    left: 0px;
+    margin: 40px 30px;
+	/* left: 5px; */
+}
+
+.peoples .people i {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	right: 15px; 
+	top: 19px;
+}
+
+.peoples .people p {
+	margin: 0;
+	font-size: 17px;
+	padding: 0;
+	color: #7f5af0;
+}
+
+.container {
+    transition: all 0.5s ease;
+	width: 100vw;
+    height: 100vh;
+	opacity: 1;
+}
+
+.container.show {
+	opacity: 0.3;
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    left:0;
+	background-color: #16161a;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+}
+
+.sendMessage form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+    z-index: 4;
+    margin-bottom: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+.sendMessage form button {
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: -20px;
+    outline: none;
+    background-color:#242629;
+    border: 3px solid black;
+}
+
+.sendMessage form button:active {
+    transform: scale(1.03);
+}
+
+.sendMessage input:active {
+    transform: scale(1.01);
+}
+
+.sendMessage input {
+    border: none;
+    padding: 13px;
+
+    width: 100%;
+    height: 100%;
+    height: 45px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 0;
+    margin-bottom: -18px;
+    margin-right: 1px;
+    background-color:#242629;
+    border: 3px solid black;
+}
+
+.sendMessage form button i {
+    font-size: 20px;
+    color: #7f5af0;
+}
+
+.Messages {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+    
+
+    margin-top: 50px;
+
+    overflow: auto;
+    /* background-color: red; */
+}
+
+.Message {
+    min-width: 200px;
+    /* max-width: 700px; */
+
+    max-height: 90px;
+    min-height: 40;
+
+    width: 200px;
+    width: 100%;
+
+    margin: 5px;
+}
+
+.Message p {
+    background-color: #7f5af0;
+    padding: 15px;
+    border-radius: 10px;
+
+    max-width: 300px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    /* padding: 0px; */
+}
+
+.Messages .Message:last-child {
+    margin-bottom: 125px;
+}
+
+.Message.Their {
+    display: flex;
+    float: left;
+}
+
+.Message.Your {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 125px;
+
+    float: right;
+}
+.Message.Your p{
+    display: flex;
+    background-color: #9c80f0;
+    justify-content: flex-end;
+    margin-right: 15px;
+
+    /* float: right; */
+}
+
+@media screen and (max-width: 500px) {
+    .tableLeft {
+        background-color: #242629;
+        position: absolute;
+        left:-260px;
+        transition: all 0.3s ease;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 260px;
+    }
+
+    .tableLeft .credits {
+        height: 61px;
+    }
+
+    .container .nameChat {
+        /* background-color: #72757e; */
+        background-color: #242629;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border-bottom: 3px solid black;
+    
+        top: 0;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    .container .nameChat h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 2px;
+        /* color: #72757e; */
+        color: #7f5af0;
+        margin: 0px;
+    }
+    
+    .container .nameChat button {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0px;
+        outline: none;
+        margin-left: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .container .nameChat button i {
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        color: #7f5af0;
+    }
+
+    .tableLeft .fas.fa-bars {
+        position: relative;
+        top: 0.5px;
+        color: #7f5af0;
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .sendMessage form button {
+        border: none;
+        padding: 14.7px;
+        border-radius: 50%;
+        outline: none;
+        background-color:#242629;
+        border: 3px solid black;
+    }
+    
+    .sendMessage input {
+        border: none;
+        padding: 13px;
+    
+        width: 100%;
+        height: 100%;
+        outline: none;
+        font-size: 20px;
+        border-radius: 50px;
+        margin-right: 1px;
+        background-color:#242629;
+        border: 3px solid black;
+    }
+
+    .sendMessage form button i {
+        font-size: 20px;
+        color: #7f5af0;
+    }
+
+    .background {
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background-color: #16161a;
+        width: 100%;
+        height: 70px;
+    }
+}
